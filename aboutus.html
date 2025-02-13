@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Polycetinfo.com</title>
+    <link rel="stylesheet" href="about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <center>
+              <img src="1[1].jpg" width="100%" height="60%" />
+            </center>
+          </div>
+          <div class="swiper-slide">
+            <center><img src="2[1].jpg" width="100%" height="60%" /></center>
+          </div>
+          <div class="swiper-slide">
+            <img src="3.jpg" width="100%" height="60%" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="4.jpg" width="100%" height="60%" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="5[1].jpg" width="100%" height="60%" />
+          </div>
+          <div class="swiper-slide">
+            <img src="6.jpg" width="100%" height="60%" />
+          </div>
+          <div class="swiper-slide">
+            <img src="7.jpg" width="100%" height="60%" />
+          </div>
+          <!-- <div class="swiper-slide"><img src="nallapalli.jpg" /></div>
+          <div class="swiper-slide"><img src="pattern.jpg" /></div> -->
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 2000
+        },
+
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      });
+    </script>
+  </body>
+</html>
